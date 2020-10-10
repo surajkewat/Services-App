@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Suber</string>
+    <string-array name="profession">
+        <item>Electrician</item>
+        <item>Mason</item>
+        <item>Plumber</item>
+        <item>Labour</item>
+        <item>Carpenter</item>
+        <item>Painter</item>
+    </string-array>
+    <string-array name="States">
+        <item>Maharashtra</item>
+        <item>Rajasthan</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Uttar Pradesh</item>
+        <item>Andra Pradesh</item>
+    </string-array>
+    <string-array name="Cities">
+        <item>Mumbai</item>
+        <item>Jaipur</item>
+        <item>Indore</item>
+        <item>Lucknow</item>
+        <item>Visakhapatnam</item>
+    </string-array>
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+    <string name="google_maps_key">AIzaSyAbAdg3u-k2tBlE3a6TZtQRkc4mTwp3xx4</string>
+
+    <string-array name="req_electrician">
+        <item>Switch and Socket</item>
+        <item>Fan</item>
+        <item>Light</item>
+        <item>Chandelier</item>
+        <item>MCB and Fuse</item>
+        <item>Inverter and Stabilizer</item>
+        <item>Appliance</item>
+        <item>Wiring</item>
+        <item>Drill and Hang</item>
+        <item>Room Heater</item>
+
+    </string-array>
+    <string-array name="req_plumber">
+        <item>Basin and Sink</item>
+        <item>Both Fitting</item>
+        <item>Blockage</item>
+        <item>Tap and Mixer</item>
+        <item>Toilet</item>
+        <item>Water Tank</item>
+        <item>Motor</item>
+        <item>Minor Installation</item>
+    </string-array>
+    <string-array name="req_carpenter">
+        <item>Balcony</item>
+        <item>Bed</item>
+        <item>Cupboard and Drawer</item>
+        <item>Door</item>
+        <item>Drill and Hang</item>
+        <item>Furniture Assembly</item>
+        <item>Furniture Repair</item>
+        <item>TV</item>
+        <item>Window and Curtain</item>
+    </string-array>
+    <string-array name="req_painter">
+        <item>Move in/Move out Painting</item>
+        <item>Home Painting</item>
+        <item>Water Proofing</item>
+        <item>Wood Polishing</item>
+        <item>Wall Texture</item>
+    </string-array>
+
+    <string-array name="req_mason">
+        <item>Brick and Block Work</item>
+        <item>Cement and concrete Work</item>
+        <item>Stone Masonry</item>
+        <item>Wood Polishing</item>
+        <item>Terrazzo Works</item>
+    </string-array>
+
+    <string-array name="req_labour">
+        <item>Labour1</item>
+        <item>Labour2</item>
+        <item>Labour3</item>
+        <item>Labour4</item>
+        <item>Labour5</item>
+    </string-array>
+
+
+</resources>

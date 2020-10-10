@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardBackgroundColor="@color/colorPrimaryDark"-->
+<!--        app:cardCornerRadius="20dp"-->
+<!--        app:cardElevation="10dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        app:cardMaxElevation="5dp">-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/personImage"-->
+<!--                android:layout_width="110dp"-->
+<!--                android:layout_height="140dp"-->
+<!--                android:layout_gravity="right"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginBottom="15dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/fname"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="15dp"-->
+
+<!--                android:text="Suraj Kewat"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/fprofession"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="15dp"-->
+
+<!--                android:text="Painter"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/fState"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="175dp"-->
+<!--                android:layout_marginTop="-21dp"-->
+<!--                android:text="Maharashtra"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/fCity"-->
+<!--                android:layout_width="330dp"-->
+<!--                android:layout_height="75dp"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:text="Mumbai"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:textSize="16sp" />-->
+
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+    <androidx.cardview.widget.CardView
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+       app:cardElevation="8dp"
+        android:transitionGroup="true"
+        android:id="@+id/cl"
+        app:cardMaxElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear_layout"
+            android:weightSum="5">
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/electrician"
+                    android:layout_gravity="start"
+                    android:transitionName="trans1"
+                    android:id="@+id/personImage"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:rotation="-90"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Name"
+                    android:id="@+id/fname"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Profession"
+                    android:id="@+id/fprofession"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Contact"
+                    android:id="@+id/fcontact"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+

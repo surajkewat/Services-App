@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_gravity="center"
+        android:rotation="-90">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+    <TextView
+        android:id="@+id/txtProfileNameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:textColor="@color/c3"
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/txtProfileEmailView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+
+        android:textColor="@color/c3" />
+
+
+    <TextView
+        android:id="@+id/txtProfileContactView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:textColor="@color/c3"
+ />
+    <TextView
+        android:id="@+id/txtProfileGenderView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+
+        android:layout_margin="15dp"
+        android:textColor="@color/c3"/>
+
+    <TextView
+        android:id="@+id/txtProfileProfessionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:textColor="@color/c3"/>
+
+    <TextView
+        android:id="@+id/txtProfileStateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+
+        android:layout_margin="15dp"
+
+        android:textColor="@color/c3"/>
+
+    <TextView
+        android:id="@+id/txtProfileCityView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+
+        android:layout_margin="15dp"
+
+        android:textColor="@color/c3"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Edit Profile"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btnGoToEditProfile"/>
+
+</LinearLayout>

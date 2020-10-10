@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SharedToUser"
+    android:gravity="center">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="25dp"
+        app:cardBackgroundColor="@color/c1"
+        android:hapticFeedbackEnabled="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cDRecruiterShare"
+        >
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:text="Share the booking"
+                android:textAlignment="center"
+                android:textColor="@color/c3"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_margin="25dp"-->
+<!--        app:cardBackgroundColor="@color/c1"-->
+<!--        android:hapticFeedbackEnabled="true"-->
+<!--        app:cardElevation="10dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        android:id="@+id/cDRecruiterWorkCompleted"-->
+<!--        >-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_gravity="center_horizontal|center_vertical"-->
+<!--            android:layout_margin="16dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            >-->
+<!--            <TextView-->
+<!--                android:text="Work completed send request for payment"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/c3"-->
+<!--                android:textSize="30sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--        </LinearLayout>-->
+
+<!--    </com.google.android.material.card.MaterialCardView>-->
+
+</LinearLayout>

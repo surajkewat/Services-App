@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".EditProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/userImageEdit"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="30dp"
+                android:src="@drawable/ic_launcher_background"
+                android:rotation="-90">
+            </ImageView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btnImgChooseEdit"
+                android:text="Choose"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btnUploadEdit"
+                android:layout_height="50dp"
+                android:text="Upload"
+
+                android:layout_marginBottom="20dp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:boxBackgroundColor="@android:color/transparent"
+                android:background="@android:color/transparent">
+
+                <EditText
+                    android:id="@+id/txtNameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Full Name"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:boxBackgroundColor="@android:color/transparent"
+                android:background="@android:color/transparent">
+
+                <EditText
+                    android:id="@+id/txtEmailEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="E-mail Address"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:focusable="true"-->
+<!--                android:focusableInTouchMode="true"-->
+<!--                app:passwordToggleEnabled="true"-->
+<!--                app:boxBackgroundColor="@android:color/transparent"-->
+<!--                android:background="@android:color/transparent">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/txtPasswordEdit"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="Password"-->
+<!--                    android:inputType="textPassword"-->
+<!--                    android:textSize="20sp" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:focusable="true"-->
+<!--                android:focusableInTouchMode="true"-->
+<!--                app:passwordToggleEnabled="true"-->
+<!--                app:boxBackgroundColor="@android:color/transparent"-->
+<!--                android:background="@android:color/transparent">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/txtConfirmPassEdit"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="Confirm Password"-->
+<!--                    android:inputType="textPassword"-->
+<!--                    android:textSize="20sp" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:boxBackgroundColor="@android:color/transparent"
+                android:background="@android:color/transparent">
+
+                <EditText
+                    android:id="@+id/txtContactEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spinGenderEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:autofillHints="City"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rgGenderEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <RadioButton
+                    android:id="@+id/rbRecuiterEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recuiter"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton
+                    android:id="@+id/rbSeekerEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seeker"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spinProfessionEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:autofillHints="Profession"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinStatesEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:autofillHints="State"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinCitiesEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:autofillHints="City"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_SaveEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_rounded"
+                    android:text="Save"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"></Button>
+
+                <Button
+                    android:id="@+id/btn_CancelEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_rounded"
+                    android:text="Cancel"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"></Button>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostRequest"
+    android:orientation="vertical">
+
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <com.google.android.material.card.MaterialCardView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="15dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:textAlignment="center"
+                           android:text="What do you want help with ?"
+                           android:textStyle="bold"
+                           android:textSize="25dp"
+                           android:textColor="@color/c3"
+                           />
+
+                       <Spinner
+                           android:id="@+id/spinRequest"
+                           android:elevation="8dp"
+                           android:popupElevation="8dp"
+                           android:layout_centerVertical="true"
+                           android:layout_width="match_parent"
+                           android:layout_height="30dp"
+                           android:layout_margin="10dp"
+                           android:autofillHints="Profession"
+                           android:textSize="30sp"
+                           android:textAlignment="center"
+                           android:defaultFocusHighlightEnabled="true"/>
+                   </LinearLayout>
+               </com.google.android.material.card.MaterialCardView>
+
+               <com.google.android.material.card.MaterialCardView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="15dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical">
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:textAlignment="center"
+                           android:text="What can specify here about problem/work"
+                           android:textStyle="bold"
+                           android:textSize="25dp"
+                           android:textColor="@color/c3"
+                           />
+<!--                       <EditText-->
+<!--                           android:id="@+id/editText2"-->
+<!--                           android:layout_width="match_parent"-->
+<!--                           android:layout_height="wrap_content"-->
+<!--                           android:ems="10"-->
+<!--                           android:textSize="20sp"-->
+<!--                           android:gravity="start|top"-->
+<!--                           android:inputType="textMultiLine"-->
+<!--                           android:lines="5"-->
+<!--                           android:layout_margin="10dp"-->
+<!--                           />-->
+
+                       <EditText
+                           android:id="@+id/et_content"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="10dp"
+                           android:gravity="start"
+                           android:hint="Detailed specifications"
+                           android:inputType="text"
+                           android:lines="5"
+                           android:maxLines="10"
+                           android:padding="10dp"
+                           android:textColor="#000" />
+                   </LinearLayout>
+               </com.google.android.material.card.MaterialCardView>
+
+               <com.google.android.material.card.MaterialCardView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="15dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="20dp"
+                           android:textAlignment="center"
+                           android:text="You can also upload a picture"
+                           android:textStyle="bold"
+                           android:textSize="25dp"
+                           android:textColor="@color/c3"
+                           />
+
+                       <com.makeramen.roundedimageview.RoundedImageView
+                           android:id="@+id/reqImage"
+                           android:layout_width="300dp"
+                           android:layout_height="400dp"
+                           android:src="@drawable/ic_launcher_background"
+                           android:layout_gravity="center"
+                           app:riv_corner_radius="10dp"/>
+
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:weightSum="2">
+                           <Button
+                               android:layout_weight="1"
+                               android:id="@+id/btnImgCap"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginBottom="8dp"
+                               android:text="Capture"
+                               android:layout_margin="8dp"/>
+                           <Button
+                               android:layout_weight="1"
+                               android:id="@+id/btnImgChooseReq"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginBottom="8dp"
+                               android:text="Choose"
+                               android:layout_margin="8dp"/>
+
+                       </LinearLayout>
+                    </LinearLayout>
+               </com.google.android.material.card.MaterialCardView>
+
+               <com.google.android.material.card.MaterialCardView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="15dp"
+                   app:cardElevation="10dp"
+                   app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:textAlignment="center"
+                           android:text="Upload video regarding problem/work"
+                           android:textStyle="bold"
+                           android:textSize="25dp"
+                           android:textColor="@color/c3"
+                           />
+                       <VideoView
+                           android:id="@+id/videoView"
+                           android:layout_width="match_parent"
+                           android:layout_height="300dp"
+                            android:layout_margin="20dp"
+                           android:layout_gravity="center"
+                           />
+
+                       <ProgressBar
+                           android:id="@+id/pbar"
+                           style="?android:attr/progressBarStyleHorizontal"
+                           android:layout_width="match_parent"
+                           android:layout_height="18dp"
+                           android:layout_margin="10dp"/>
+
+                           <Button
+                               android:id="@+id/button2"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginBottom="8dp"
+                               android:onClick="record"
+                               android:text="Record"
+                               android:layout_weight="1"
+                               android:layout_margin="8dp"
+                               android:layout_gravity="center"/>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+               <Button
+                   android:background="@color/c1"
+                   android:textColor="@color/c3"
+                   android:id="@+id/btnSendReq"
+                   android:layout_width="match_parent"
+                   android:layout_height="60dp"
+                   android:text="Send Request"
+                   android:textSize="22sp"
+                   android:textStyle="bold"
+                   android:layout_margin="15dp"/>
+
+           </LinearLayout>
+
+       </ScrollView>
+
+</LinearLayout>

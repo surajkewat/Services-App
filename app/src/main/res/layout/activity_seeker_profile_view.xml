@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeekerProfileView">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImageViewXT"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_gravity="center"
+        android:rotation="-90">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+    <TextView
+        android:id="@+id/txtProfileNameViewXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:textColor="@color/c3"
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/txtProfileEmailViewXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+
+        android:textColor="@color/c3" />
+
+
+    <TextView
+        android:id="@+id/txtProfileContactViewXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:textColor="@color/c3"
+        />
+    <TextView
+        android:id="@+id/txtProfileGenderViewXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+
+        android:layout_margin="15dp"
+        android:textColor="@color/c3"/>
+
+    <TextView
+        android:id="@+id/txtProfileProfessionViewXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:textColor="@color/c3"/>
+
+    <TextView
+        android:id="@+id/txtProfileStateViewXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+
+        android:layout_margin="15dp"
+
+        android:textColor="@color/c3"/>
+
+    <TextView
+        android:id="@+id/txtProfileCityViewXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20sp"
+
+        android:layout_margin="15dp"
+
+        android:textColor="@color/c3"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Create Requests"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btnSendReqXT"/>
+
+</LinearLayout>

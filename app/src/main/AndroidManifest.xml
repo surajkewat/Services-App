@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.suber">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SeekerProfileView"></activity>
+        <activity android:name=".PaymentDOne" />
+        <activity android:name=".PaymentNotDone" />
+        <activity android:name=".SeekerCompletedRequests" />
+        <activity android:name=".SharedBookingViaWebView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="deeplink"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SharedRequestList"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".SharingActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".SharedToUser"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".RecruiterConfirmedRequests"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".EditProfile"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".RecruiterCompletedRequests"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".PaymentFromRecruiter"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".SeekerSideConfirmedReqView"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".login_form"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SeekerConfirmedRequests"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".RecruiterSideReqView"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".RecruiterPendingRequests"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".SeekerSideReqView"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".SeekerPendingRequests"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".PostRequest"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".MapActivity" />
+        <activity
+            android:name=".AvailableWorkers"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".DrawerActivity" />
+        <activity android:name=".Test" />
+        <activity
+            android:name=".GeoLocation"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".signUp_form"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".WhatsAppSend"
+            android:theme="@style/AppTheme2" />
+
+        <service android:name=".FetchAddressIntentService" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
