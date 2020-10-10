@@ -51,7 +51,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
 
         mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
 
-        String apiKey = "AIzaSyAbAdg3u-k2tBlE3a6TZtQRkc4mTwp3xx4";
+        String apiKey = "Your API Key";
 
         // Setup Places Client
         if (!Places.isInitialized()) {
